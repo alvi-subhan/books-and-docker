@@ -1,0 +1,9 @@
+1)jumping for C to D:    Cd:"D:\Docker Toolbox\psweb" where Docker toolbox is a folder in D and psweb is a subfolder of psweb
+
+2)to list the contents of folder: just add dir 
+
+3)to go back from psweb to DOcker toolbox to : use Cd.. command
+
+4)to create a folder : mkdir "subhan" will create a folder named subhan in c or d dirve
+
+5)

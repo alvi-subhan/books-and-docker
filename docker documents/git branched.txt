@@ -1,0 +1,4 @@
+1-branches can be used to test the diff codes that u are trying to deploy
+2-u can merge branches ,once u are done and have tested the code.
+3- lets say u created a file(pakistan taxes) in new branch called (shopify-taxes) and its all working now u want to add this to master branch
+so when u merge shopify taxes and master the file can be seen at master branch

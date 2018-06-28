@@ -1,0 +1,16 @@
+deploying on heroku:
+app=name of your app on heroku
+process-type=there are only 2 processes(web & worker)
+Get auth:token by heroku cli 
+create an app
+create dockerfile
+build image 
+create container 
+check ur app
+tag ur image for heroku using command (docker tag <image> registry.heroku.com/<app>/<process-type> )
+create auth token using toolbelt(heroku auth:token)
+login on docker hub using the docker cli (docker login --username=_ --password=$(heroku auth:token) registry.heroku.com)
+push that tagged image on docker hub
+run heroku (heroku -v)
+login heroku
+

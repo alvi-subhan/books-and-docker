@@ -1,0 +1,39 @@
+Images=the images provide the ability to package the software and all of its dependencies including OS
+to run the app or software. it is also called as PODA (packaged once deployed anywhere).
+
+BUILD=image SHIP=registry RUN=container (DOCKER MISSION)
+
+docker daemon= a process which understants the reqeust coming from thhe client
+
+use docker volumes to sync the directories.
+
+QUESTIon: can i use the same image to run three diff web app ?agar change krna hua web app ka code?
+QUESTIon: why do we call container disposable?
+
+
+
+DOCKERFILE: run in docker file runs the command in cmd when the image is build while CMD command is used to 
+run the command when the container is started
+
+THE PROCESS: you make an app then u make a req.txt file in which u will write all the dependencies to run that 
+particular app then what u do is u will build an image using a docker file that will install all of the dependencies
+and the run the app using container 
+
+
+FOLDER: folder will contain the docker file,code of app and requirement.txt
+
+DOCKER MACHINE: A platfrom to perform containerization
+Docker daemon: AN API which takes the reqeust of the client to the containerd
+
+CONTAINERD: it is used to take the run command to runc to start a new container, In containerd life cycles of 
+operation of container is performed i.e start,stop,executoin e,t,c
+
+SHIM: The shim is integral to the implementation of daemonless containers (the thing
+we just mentioned about decoupling running containers from the daemon for
+things like upgrading the daemon without killing containers).
+
+How it’s implemented on Linux
+On a Linux system, the components we’ve discussed are implemented as
+separate binaries as follows: - dockerd (the Docker daemon) - dockercontainerd
+(containerd) - docker-containerd-shim (shim) - docker-runc
+(runc)

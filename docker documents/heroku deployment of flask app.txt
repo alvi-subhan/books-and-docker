@@ -1,0 +1,9 @@
+1- build image in the directory where ur Repo (CD COMMAND) is located
+2- create app on heroku
+3- tag ur image for heroku using command (docker tag <image> registry.heroku.com/<app>/<process-type> )
+4- app=name of your app on heroku
+5- process-type=there are only 2 processes(web & worker)
+6- run heroku -v command on bash or powershell to run heroku tool belt
+7- then use command (heroku auth:token) this step is called implicit call
+8- run this command as it is bcz auth token contains username and password (docker login --username=_ --password=$(heroku auth:token) registry.heroku.com)
+9- push that tagged image on docker registry using the command (docker push <name of image>)
